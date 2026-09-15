@@ -100,7 +100,7 @@
     },
     {
       "system_name": "Simple Baseline (TF-IDF + 1-NN)",
-      "elapsed_seconds": 1.97,
+      "elapsed_seconds": 1.52,
       "intent_classification": {
         "accuracy": 0.98,
         "macro_precision": 0.9056,
@@ -198,7 +198,7 @@
     },
     {
       "system_name": "Production Support Agent",
-      "elapsed_seconds": 1.55,
+      "elapsed_seconds": 1.66,
       "intent_classification": {
         "accuracy": 0.985,
         "macro_precision": 0.9315,
@@ -283,15 +283,15 @@
         "tn": 181
       },
       "lexical_metrics": {
-        "bleu_4": 0.1469,
-        "rouge_l": 0.3453,
-        "cosine_similarity": 0.2629
+        "bleu_4": 0.1496,
+        "rouge_l": 0.3468,
+        "cosine_similarity": 0.2579
       },
       "judge_scores": {
-        "groundedness": 4.93,
-        "actionability": 4.93,
+        "groundedness": 4.95,
+        "actionability": 4.95,
         "brand_tone": 5.0,
-        "overall": 4.95
+        "overall": 4.97
       }
     }
   ],
