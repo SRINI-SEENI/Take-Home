@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "customer_text": "@AppleSupport My iPhone 7 battery percentage jumps from 40% to 1% in five minutes.",
+    "drafted_reply": "We know how crucial battery life is. Head to Settings > Battery > Battery Health to verify maximum capacity. If below 80%, a battery service may be recommended: https://apple.co/support",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Spot-on advice with exact Settings path and official link.",
+    "judge_reasoning": "Accurately targets battery health diagnostics with perfect Apple tone."
+  },
+  {
+    "id": 2,
+    "customer_text": "@AppleSupport I updated my iPad to iOS 11.1 and now the keyboard is lagging horribly whenever I type.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Reset all settings works but is slightly aggressive before trying reset keyboard dictionary.",
+    "judge_reasoning": "Standard Apple software troubleshooting procedure with proper links."
+  },
+  {
+    "id": 3,
+    "customer_text": "@AppleSupport MY APPLE ID IS LOCKED FOR SECURITY REASONS AND I CAN'T RECEIVE 2FA SMS!",
+    "drafted_reply": "We understand the importance of securing your Apple ID. To protect your personal credentials, please reach out to us via DM or visit https://iforgot.apple.com to begin recovery.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Correct escalation routing to iforgot.apple.com to protect credentials.",
+    "judge_reasoning": "Safely refrains from bot credential handling and provides official recovery portal."
+  },
+  {
+    "id": 4,
+    "customer_text": "@AppleSupport 3 separate charges of $49.99 from iTunes on my credit card this morning that I NEVER authorized!",
+    "drafted_reply": "We'd like to help investigate this billing charge. For account security, please send us a DM with your Apple ID email so our billing team can review your purchase history.",
+    "human_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Good escalation, though could have also mentioned reportaproblem.apple.com directly.",
+    "judge_reasoning": "Appropriately escalates financial dispute to human DM channel."
+  },
+  {
+    "id": 5,
+    "customer_text": "@AppleSupport My phone won't charge unless I bend the lightning cable at a specific 90-degree angle.",
+    "drafted_reply": "We know how crucial battery life is. Head to Settings > Battery > Battery Health to verify maximum capacity: https://apple.co/support",
+    "human_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Mismatch: Customer has a physical cable/port issue, but reply gives battery health instructions.",
+    "judge_reasoning": "Helpful tone but misses the physical cable damage issue."
+  },
+  {
+    "id": 6,
+    "customer_text": "@AppleSupport Bluetooth keeps disconnecting from my car audio system every 10 minutes on my iPhone X.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 3, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Forget Device in Bluetooth settings should be step 1 before full reset all settings.",
+    "judge_reasoning": "Actionable reset steps provided, tone is polite."
+  },
+  {
+    "id": 7,
+    "customer_text": "@AppleSupport How do I cancel my Apple Music individual subscription before the free trial renews?",
+    "drafted_reply": "Thanks for reaching out! Please DM us your Apple ID and iOS version.",
+    "human_scores": {"groundedness": 1, "actionability": 1, "brand_tone": 3},
+    "judge_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 3},
+    "human_notes": "Trivial canned response forces customer into DM for a self-service cancellation.",
+    "judge_reasoning": "Generic boilerplate that fails to answer the question."
+  },
+  {
+    "id": 8,
+    "customer_text": "@AppleSupport Can I trade in my iPhone 6s Plus towards a new iPhone 8 at the Apple Store?",
+    "drafted_reply": "We want to help get your device repaired. You can view official repair pricing and book a Genius Bar appointment directly through: https://support.apple.com/repair",
+    "human_scores": {"groundedness": 2, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Customer asked about trade-in, reply gave repair/Genius Bar link.",
+    "judge_reasoning": "Provides Apple support link but confuses trade-in with repair."
+  },
+  {
+    "id": 9,
+    "customer_text": "@AppleSupport You guys are criminals. Stealing money from my bank account and your customer support hung up on me. I'm contacting my lawyer today.",
+    "drafted_reply": "We take these concerns very seriously and want to review your case directly. Please send us a DM with your case number and account email so a senior specialist can assist.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Exemplary de-escalation of a legal threat; immediately escalates to senior tier.",
+    "judge_reasoning": "De-escalates hostility, offers senior human specialist review."
+  },
+  {
+    "id": 10,
+    "customer_text": "@AppleSupport yes it is still doing that",
+    "drafted_reply": "Thanks for reaching back out! Could you clarify which issue you are experiencing, along with your device model and iOS version? We're here to help.",
+    "human_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Proper handling of dangling conversational fragment.",
+    "judge_reasoning": "Appropriately requests context without making incorrect technical assumptions."
+  },
+  {
+    "id": 11,
+    "customer_text": "@AppleSupport Can you tell me how to root my Samsung Galaxy S8 to install custom ROM?",
+    "drafted_reply": "We specialize in supporting Apple hardware and software services. For third-party or non-Apple products, please consult the respective manufacturer's support team.",
+    "human_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Polite, firm boundary setting for out-of-scope inquiry.",
+    "judge_reasoning": "Courteously informs customer of service scope."
+  },
+  {
+    "id": 12,
+    "customer_text": "@AppleSupport My Apple Watch battery swelled up and popped the screen off while charging. Fire hazard!",
+    "drafted_reply": "Your safety is our absolute priority. Please disconnect and stop using the device immediately. Send us a DM with your contact details so our safety engineering team can assist you directly.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Critical safety protocol followed impeccably.",
+    "judge_reasoning": "Immediate safety instructions and escalation."
+  },
+  {
+    "id": 13,
+    "customer_text": "@AppleSupport I forgot my iPhone passcode and now it says 'iPhone is disabled connect to iTunes'.",
+    "drafted_reply": "We understand the importance of securing your Apple ID. To protect your personal credentials, please reach out to us via DM or visit https://iforgot.apple.com to begin recovery.",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Passcode recovery requires iTunes restore rather than iforgot, but DM escalation is safe.",
+    "judge_reasoning": "Safe security response directing to official recovery."
+  },
+  {
+    "id": 14,
+    "customer_text": "@AppleSupport How do I restore my WhatsApp chats from iCloud on my new iPhone 8?",
+    "drafted_reply": "We can guide you through managing your backups. Check Settings > [Your Name] > iCloud > iCloud Backup to verify your latest backup status: https://support.apple.com/HT203977",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Helpful iCloud backup link, though WhatsApp specific in-app restore could be noted.",
+    "judge_reasoning": "Relevant backup guidance and link provided."
+  },
+  {
+    "id": 15,
+    "customer_text": "@AppleSupport Wow, AMAZING job on iOS 11 guys!! My $1000 phone is now an expensive paperweight! 👏👏👏",
+    "drafted_reply": "We hear you, and we appreciate your feedback. If you're experiencing a specific technical issue with your device, let us know your model and iOS version—we'd love to help.",
+    "human_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Excellent de-escalation of sarcasm without falling into the trap.",
+    "judge_reasoning": "Addresses frustration calmly and requests diagnostic context."
+  },
+  {
+    "id": 16,
+    "customer_text": "@AppleSupport My phone died while updating iOS 11 and won't turn on, and my card got charged for iCloud too.",
+    "drafted_reply": "We want to make sure you get the best possible help with this. Please send us a direct message so we can look into your device details and assist you further.",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Prudent escalation for multi-issue complaint.",
+    "judge_reasoning": "Avoids conflating two separate technical and billing issues in a public tweet."
+  },
+  {
+    "id": 17,
+    "customer_text": "@AppleSupport Wi-Fi toggle is greyed out completely in Settings after updating to iOS 11.2.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Reset Network Settings is preferable to Reset All Settings, but viable.",
+    "judge_reasoning": "Gives clear restart and reset instructions."
+  },
+  {
+    "id": 18,
+    "customer_text": "@AppleSupport 11.2.1",
+    "drafted_reply": "Thanks for reaching back out! Could you clarify which issue you are experiencing, along with your device model and iOS version? We're here to help.",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "A bit repetitive asking for iOS version when they just gave it, but safely re-opens context.",
+    "judge_reasoning": "Reasonable response to a context fragment."
+  },
+  {
+    "id": 19,
+    "customer_text": "@AppleSupport Another update, another destroyed battery. Does Tim Cook personally come and drain my phone?",
+    "drafted_reply": "We know how crucial battery life is. Head to Settings > Battery > Battery Health to verify maximum capacity: https://apple.co/support",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 4},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Direct diagnostic link provided despite the sarcasm.",
+    "judge_reasoning": "Responds constructively to venting."
+  },
+  {
+    "id": 20,
+    "customer_text": "@AppleSupport Someone in Russia just signed into my iCloud account and changed my trusted numbers. Help!",
+    "drafted_reply": "We understand the importance of securing your Apple ID. To protect your personal credentials, please reach out to us via DM or visit https://iforgot.apple.com to begin recovery.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Fast escalation and official recovery portal provided.",
+    "judge_reasoning": "Handles account takeover securely."
+  },
+  {
+    "id": 21,
+    "customer_text": "@AppleSupport My AirPods left bud isn't producing any sound, but right works fine.",
+    "drafted_reply": "We want to help get your device repaired. You can view official repair pricing and book a Genius Bar appointment directly through: https://support.apple.com/repair",
+    "human_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 4, "brand_tone": 4},
+    "human_notes": "Jumped to repair booking before suggesting an AirPods reset procedure.",
+    "judge_reasoning": "Provides official repair link but could have offered reset steps first."
+  },
+  {
+    "id": 22,
+    "customer_text": "@AppleSupport My screen is cracked and I can't enter my passcode to back up before repair.",
+    "drafted_reply": "We want to help get your device repaired. You can view official repair pricing and book a Genius Bar appointment directly through: https://support.apple.com/repair",
+    "human_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Didn't address the backup dilemma with cracked screen.",
+    "judge_reasoning": "Targets repair but neglects the backup difficulty."
+  },
+  {
+    "id": 23,
+    "customer_text": "@AppleSupport DM sent.",
+    "drafted_reply": "Thanks for reaching back out! Could you clarify which issue you are experiencing, along with your device model and iOS version? We're here to help.",
+    "human_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "judge_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "human_notes": "Flawed: Customer said DM sent, agent asked for info in public tweet again.",
+    "judge_reasoning": "Should acknowledge incoming DM rather than ask for public repetition."
+  },
+  {
+    "id": 24,
+    "customer_text": "@AppleSupport What is the best pizza place in downtown Chicago?",
+    "drafted_reply": "We specialize in supporting Apple hardware and software services. For third-party or non-Apple products, please consult the respective manufacturer's support team.",
+    "human_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Slightly funny referring a pizza query to 'manufacturer support', but handles scope boundary.",
+    "judge_reasoning": "Politely deflects off-topic query."
+  },
+  {
+    "id": 25,
+    "customer_text": "@AppleSupport I have spent 4 HOURS waiting at Covent Garden Apple Store for a screen replacement. Worst service ever.",
+    "drafted_reply": "We take these concerns very seriously and want to review your case directly. Please send us a DM with your case number and account email so a senior specialist can assist.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Senior tier intervention is appropriate for on-site retail escalation.",
+    "judge_reasoning": "Addresses severe store wait complaint empathetically."
+  },
+  {
+    "id": 26,
+    "customer_text": "@AppleSupport My phone died at 25% battery without warning. Why is this happening?",
+    "drafted_reply": "We know how crucial battery life is. Head to Settings > Battery > Battery Health to verify maximum capacity. If below 80%, a battery service may be recommended: https://apple.co/support",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Exact diagnostic path for unexpected battery drops.",
+    "judge_reasoning": "Clear, grounded, and within character limit."
+  },
+  {
+    "id": 27,
+    "customer_text": "@AppleSupport How do I delete old iCloud backups to free up storage space?",
+    "drafted_reply": "We can guide you through managing your backups. Check Settings > [Your Name] > iCloud > iCloud Backup to verify your latest backup status: https://support.apple.com/HT203977",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Settings path is Manage Storage > Backups > Delete, but HT203977 covers it.",
+    "judge_reasoning": "Provides accurate iCloud backup management reference."
+  },
+  {
+    "id": 28,
+    "customer_text": "@AppleSupport My camera screen is completely black on iOS 11.0.3 when opening camera app.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Force restart is standard first step for camera daemon lockups.",
+    "judge_reasoning": "Relevant troubleshooting steps for software glitch."
+  },
+  {
+    "id": 29,
+    "customer_text": "@AppleSupport Apple Music billed me twice for family plan this month.",
+    "drafted_reply": "We'd like to help investigate this billing charge. For account security, please send us a DM with your Apple ID email so our billing team can review your purchase history.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Direct, secure billing routing.",
+    "judge_reasoning": "Protects customer billing information via DM."
+  },
+  {
+    "id": 30,
+    "customer_text": "@AppleSupport Is iPhone 8 waterproof if I drop it in a pool?",
+    "drafted_reply": "We're here to help! Please let us know which device model and iOS version you're using so we can assist.",
+    "human_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "judge_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "human_notes": "Generic fallback fails to state that iPhone 8 is IP67 water resistant, not waterproof.",
+    "judge_reasoning": "Misses direct factual answer regarding IP67 rating."
+  },
+  {
+    "id": 31,
+    "customer_text": "@AppleSupport My iPhone speaker sounds muffled after getting slightly wet.",
+    "drafted_reply": "We want to help get your device repaired. You can view official repair pricing and book a Genius Bar appointment directly through: https://support.apple.com/repair",
+    "human_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Could suggest letting it air dry speaker-down before paying for repair.",
+    "judge_reasoning": "Safe repair guidance for potential liquid ingress."
+  },
+  {
+    "id": 32,
+    "customer_text": "@AppleSupport Stolen iPhone showing activation lock with someone else's email. Help!",
+    "drafted_reply": "We understand the importance of securing your Apple ID. To protect your personal credentials, please reach out to us via DM or visit https://iforgot.apple.com to begin recovery.",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Security escalation safely deployed.",
+    "judge_reasoning": "Proper security boundaries observed."
+  },
+  {
+    "id": 33,
+    "customer_text": "@AppleSupport My phone is stuck in a boot loop showing white Apple logo for 2 hours.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 2, "brand_tone": 4},
+    "human_notes": "A boot-looping phone cannot access 'Settings > General'; needs recovery mode (DFU).",
+    "judge_reasoning": "Flawed instruction: user cannot enter Settings menu during boot loop."
+  },
+  {
+    "id": 34,
+    "customer_text": "@AppleSupport Can I use US Apple ID with UK debit card?",
+    "drafted_reply": "We'd like to help investigate this billing charge. For account security, please send us a DM with your Apple ID email so our billing team can review your purchase history.",
+    "human_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Not a disputed charge, just a policy question on international billing address matching.",
+    "judge_reasoning": "Treats informational billing query as dispute."
+  },
+  {
+    "id": 35,
+    "customer_text": "@AppleSupport My teen spent $500 on game gems without permission. Need refund now.",
+    "drafted_reply": "We'd like to help investigate this billing charge. For account security, please send us a DM with your Apple ID email so our billing team can review your purchase history.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Large in-app refund requires agent verification.",
+    "judge_reasoning": "Correctly escalates unauthorized minor purchase."
+  },
+  {
+    "id": 36,
+    "customer_text": "@AppleSupport iPhone SE, 32GB",
+    "drafted_reply": "Thanks for reaching back out! Could you clarify which issue you are experiencing, along with your device model and iOS version? We're here to help.",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Context fragment safely resolved.",
+    "judge_reasoning": "Politely requests missing problem description."
+  },
+  {
+    "id": 37,
+    "customer_text": "@AppleSupport Check out my new rap single on Spotify!",
+    "drafted_reply": "We specialize in supporting Apple hardware and software services. For third-party or non-Apple products, please consult the respective manufacturer's support team.",
+    "human_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Deflects promotional spam.",
+    "judge_reasoning": "Polite out-of-scope response."
+  },
+  {
+    "id": 38,
+    "customer_text": "@AppleSupport Tim Cook has ruined this company. Everything is overpriced junk.",
+    "drafted_reply": "We hear you, and we appreciate your feedback. If you're experiencing a specific technical issue with your device, let us know your model and iOS version—we'd love to help.",
+    "human_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Textbook de-escalation of brand rant.",
+    "judge_reasoning": "Neutral, courteous response."
+  },
+  {
+    "id": 39,
+    "customer_text": "@AppleSupport Battery swollen pushing screen out. Phone is boiling hot to touch!",
+    "drafted_reply": "Your safety is our absolute priority. Please disconnect and stop using the device immediately. Send us a DM with your contact details so our safety engineering team can assist you directly.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Immediate safety priority triggered.",
+    "judge_reasoning": "Follows critical hardware safety protocol."
+  },
+  {
+    "id": 40,
+    "customer_text": "@AppleSupport My iMessage won't activate on new phone number, stuck on 'Waiting for activation'.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Toggle iMessage off/on and check carrier SMS capability is standard for activation errors.",
+    "judge_reasoning": "Offers generic iOS troubleshooting."
+  },
+  {
+    "id": 41,
+    "customer_text": "@AppleSupport Why did iOS 11 remove 3D touch app switcher gesture?",
+    "drafted_reply": "We hear you, and we appreciate your feedback. If you're experiencing a specific technical issue with your device, let us know your model and iOS version—we'd love to help.",
+    "human_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 5},
+    "human_notes": "Answers feedback professionally (Apple restored this gesture in 11.1).",
+    "judge_reasoning": "Acknowledges product feedback politely."
+  },
+  {
+    "id": 42,
+    "customer_text": "@AppleSupport Touch ID stopped recognizing my thumbprint after minor hand cut healed.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Should advise deleting and re-enrolling fingerprint in Touch ID settings.",
+    "judge_reasoning": "Generic reset given instead of Touch ID re-enrollment."
+  },
+  {
+    "id": 43,
+    "customer_text": "@AppleSupport How do I transfer music from PC iTunes to my iPhone without wiping existing songs?",
+    "drafted_reply": "We can guide you through managing your backups. Check Settings > [Your Name] > iCloud > iCloud Backup to verify your latest backup status: https://support.apple.com/HT203977",
+    "human_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "judge_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "human_notes": "iCloud backup does not manage local iTunes library manual sync.",
+    "judge_reasoning": "Confuses iTunes music syncing with iCloud backup."
+  },
+  {
+    "id": 44,
+    "customer_text": "@AppleSupport Screen shattered into pieces when dropped on pavement. Need replacement today.",
+    "drafted_reply": "We want to help get your device repaired. You can view official repair pricing and book a Genius Bar appointment directly through: https://support.apple.com/repair",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Direct official repair portal and appointment booking link.",
+    "judge_reasoning": "Accurate repair options and scheduling link."
+  },
+  {
+    "id": 45,
+    "customer_text": "@AppleSupport Account locked because password entered incorrectly too many times.",
+    "drafted_reply": "We understand the importance of securing your Apple ID. To protect your personal credentials, please reach out to us via DM or visit https://iforgot.apple.com to begin recovery.",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Correct iforgot.apple.com link and credential escalation.",
+    "judge_reasoning": "Exact protocol for locked Apple ID accounts."
+  },
+  {
+    "id": 46,
+    "customer_text": "@AppleSupport Cellular data says 'No Service' after landing in London with roaming turned on.",
+    "drafted_reply": "Let's work to get this running smoothly. Try a force restart on your device, and test Settings > General > Reset > Reset All Settings if the glitch continues: https://apple.co/support",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Reset Network Settings or Airplane mode toggle works for roaming cell latch.",
+    "judge_reasoning": "Solid baseline connectivity troubleshooting."
+  },
+  {
+    "id": 47,
+    "customer_text": "@AppleSupport Still waiting.",
+    "drafted_reply": "Thanks for reaching back out! Could you clarify which issue you are experiencing, along with your device model and iOS version? We're here to help.",
+    "human_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Dangling wait fragment handled politely.",
+    "judge_reasoning": "Polite context request."
+  },
+  {
+    "id": 48,
+    "customer_text": "@AppleSupport Can I trade in iPad Air 2 for iPad Pro?",
+    "drafted_reply": "We want to help get your device repaired. You can view official repair pricing and book a Genius Bar appointment directly through: https://support.apple.com/repair",
+    "human_scores": {"groundedness": 2, "actionability": 2, "brand_tone": 4},
+    "judge_scores": {"groundedness": 3, "actionability": 3, "brand_tone": 4},
+    "human_notes": "Offered repair link instead of Apple Trade In program.",
+    "judge_reasoning": "Confuses trade-in with repair pricing."
+  },
+  {
+    "id": 49,
+    "customer_text": "@AppleSupport Battery percentage drops 20% whenever I open Snapchat camera.",
+    "drafted_reply": "We know how crucial battery life is. Head to Settings > Battery > Battery Health to verify maximum capacity. If below 80%, a battery service may be recommended: https://apple.co/support",
+    "human_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "judge_scores": {"groundedness": 5, "actionability": 5, "brand_tone": 5},
+    "human_notes": "Checks battery health to determine if app camera voltage draw is triggering throttling.",
+    "judge_reasoning": "Accurate battery diagnostic path."
+  },
+  {
+    "id": 50,
+    "customer_text": "@AppleSupport My phone is completely fine, just wanted to say thanks for great service!",
+    "drafted_reply": "We hear you, and we appreciate your feedback. If you're experiencing a specific technical issue with your device, let us know your model and iOS version—we'd love to help.",
+    "human_scores": {"groundedness": 4, "actionability": 3, "brand_tone": 4},
+    "judge_scores": {"groundedness": 4, "actionability": 4, "brand_tone": 5},
+    "human_notes": "Slightly robotic assuming there's an issue when user gave positive feedback, but cordial.",
+    "judge_reasoning": "Courteous tone, minor mismatch with positive feedback."
+  }
+]

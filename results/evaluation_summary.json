@@ -1,0 +1,332 @@
+{
+  "benchmark_results": [
+    {
+      "system_name": "Trivial Baseline",
+      "elapsed_seconds": 0.0,
+      "intent_classification": {
+        "accuracy": 0.025,
+        "macro_precision": 0.0028,
+        "macro_recall": 0.1111,
+        "macro_f1": 0.0054,
+        "per_class": {
+          "account_security_appleid": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "battery_power_hardware": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "billing_subscriptions_refund": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 6
+          },
+          "chitchat_feedback_rant": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "device_backup_sync": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 166
+          },
+          "incomplete_context": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "out_of_scope": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "repair_applecare_hardware": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5
+          },
+          "software_os_update": {
+            "precision": 0.025,
+            "recall": 1.0,
+            "f1": 0.0488,
+            "support": 5
+          }
+        },
+        "labels": [
+          "account_security_appleid",
+          "battery_power_hardware",
+          "billing_subscriptions_refund",
+          "chitchat_feedback_rant",
+          "device_backup_sync",
+          "incomplete_context",
+          "out_of_scope",
+          "repair_applecare_hardware",
+          "software_os_update"
+        ]
+      },
+      "escalation_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "false_auto_handle_rate": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 16,
+        "tn": 184
+      },
+      "lexical_metrics": {
+        "bleu_4": 0.0019,
+        "rouge_l": 0.0715,
+        "cosine_similarity": 0.0412
+      },
+      "judge_scores": {
+        "groundedness": 4.0,
+        "actionability": 5.0,
+        "brand_tone": 5.0,
+        "overall": 4.67
+      }
+    },
+    {
+      "system_name": "Simple Baseline (TF-IDF + 1-NN)",
+      "elapsed_seconds": 1.97,
+      "intent_classification": {
+        "accuracy": 0.98,
+        "macro_precision": 0.9056,
+        "macro_recall": 0.9056,
+        "macro_f1": 0.9002,
+        "per_class": {
+          "account_security_appleid": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "support": 4
+          },
+          "battery_power_hardware": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "support": 4
+          },
+          "billing_subscriptions_refund": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6
+          },
+          "chitchat_feedback_rant": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "device_backup_sync": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 166
+          },
+          "incomplete_context": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "support": 4
+          },
+          "out_of_scope": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "repair_applecare_hardware": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "software_os_update": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6667,
+            "support": 5
+          }
+        },
+        "labels": [
+          "account_security_appleid",
+          "battery_power_hardware",
+          "billing_subscriptions_refund",
+          "chitchat_feedback_rant",
+          "device_backup_sync",
+          "incomplete_context",
+          "out_of_scope",
+          "repair_applecare_hardware",
+          "software_os_update"
+        ]
+      },
+      "escalation_metrics": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "false_auto_handle_rate": 0.75,
+        "tp": 4,
+        "fp": 0,
+        "fn": 12,
+        "tn": 184
+      },
+      "lexical_metrics": {
+        "bleu_4": 0.001,
+        "rouge_l": 0.1285,
+        "cosine_similarity": 0.121
+      },
+      "judge_scores": {
+        "groundedness": 4.0,
+        "actionability": 4.96,
+        "brand_tone": 5.0,
+        "overall": 4.65
+      }
+    },
+    {
+      "system_name": "Production Support Agent",
+      "elapsed_seconds": 1.55,
+      "intent_classification": {
+        "accuracy": 0.985,
+        "macro_precision": 0.9315,
+        "macro_recall": 0.9185,
+        "macro_f1": 0.9117,
+        "per_class": {
+          "account_security_appleid": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "battery_power_hardware": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "support": 4
+          },
+          "billing_subscriptions_refund": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6
+          },
+          "chitchat_feedback_rant": {
+            "precision": 1.0,
+            "recall": 0.6667,
+            "f1": 0.8,
+            "support": 3
+          },
+          "device_backup_sync": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 166
+          },
+          "incomplete_context": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "out_of_scope": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571,
+            "support": 3
+          },
+          "repair_applecare_hardware": {
+            "precision": 0.8333,
+            "recall": 1.0,
+            "f1": 0.9091,
+            "support": 5
+          },
+          "software_os_update": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 5
+          }
+        },
+        "labels": [
+          "account_security_appleid",
+          "battery_power_hardware",
+          "billing_subscriptions_refund",
+          "chitchat_feedback_rant",
+          "device_backup_sync",
+          "incomplete_context",
+          "out_of_scope",
+          "repair_applecare_hardware",
+          "software_os_update"
+        ]
+      },
+      "escalation_metrics": {
+        "precision": 0.8235,
+        "recall": 0.875,
+        "f1": 0.8485,
+        "false_auto_handle_rate": 0.125,
+        "tp": 14,
+        "fp": 3,
+        "fn": 2,
+        "tn": 181
+      },
+      "lexical_metrics": {
+        "bleu_4": 0.1469,
+        "rouge_l": 0.3453,
+        "cosine_similarity": 0.2629
+      },
+      "judge_scores": {
+        "groundedness": 4.93,
+        "actionability": 4.93,
+        "brand_tone": 5.0,
+        "overall": 4.95
+      }
+    }
+  ],
+  "human_judge_agreement": {
+    "dimensions": {
+      "groundedness": {
+        "exact_agreement_pct": 76.0,
+        "adjacent_agreement_pct": 100.0,
+        "cohen_quadratic_kappa": 0.8851,
+        "pearson_r": 0.9123,
+        "mean_bias": 0.16,
+        "sample_size": 50
+      },
+      "actionability": {
+        "exact_agreement_pct": 82.0,
+        "adjacent_agreement_pct": 100.0,
+        "cohen_quadratic_kappa": 0.9108,
+        "pearson_r": 0.9287,
+        "mean_bias": 0.18,
+        "sample_size": 50
+      },
+      "brand_tone": {
+        "exact_agreement_pct": 96.0,
+        "adjacent_agreement_pct": 100.0,
+        "cohen_quadratic_kappa": 0.9245,
+        "pearson_r": 0.9275,
+        "mean_bias": 0.04,
+        "sample_size": 50
+      }
+    },
+    "overall_macro": {
+      "mean_quadratic_kappa": 0.9068,
+      "mean_exact_agreement_pct": 84.67,
+      "mean_adjacent_agreement_pct": 100.0
+    },
+    "interpretation": "Judge exhibits substantial agreement with human annotators (Macro Kappa = 0.9068, Adjacent Agreement = 100.0%). A slight positive bias (+0.12) occurs because the judge awards full tone points for polite standard phrases where human annotators demanded deeper context sensitivity."
+  }
+}
